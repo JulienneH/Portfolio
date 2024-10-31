@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "Luciole";
+  src: url("fonts/Luciole-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Luciole", sans-serif;
+  background-color: #efe9e4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.presentation {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  width: 90%;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.presentation_photo {
+  width: 25%;
+  border-radius: 15px;
+  margin-left: 200px;
+  margin-top: 150px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.presentation_text {
+  color: #5e5343;
+  text-align: justify;
+}
+
+.presentation_title {
+  font-size: 50px;
+}
+.presentation_subtitle {
+  font-size: 30px;
+}
+.presentation_description {
+  font-size: 20px;
 }
