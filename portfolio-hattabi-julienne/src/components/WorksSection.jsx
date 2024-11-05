@@ -77,7 +77,7 @@ const WorksSection = () => {
 
   return (
     <div className="cards_works ">
-      <h1 className=" section_text ">Mes travaux</h1>
+      <h1 className=" section_text section_title ">Mes travaux</h1>
       <div className="cards ">
         {works.map((work) => (
           <CardWorks

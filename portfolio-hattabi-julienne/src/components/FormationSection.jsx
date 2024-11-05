@@ -3,7 +3,7 @@ import ImageFormation from "../images/img-formation.webp";
 
 const FormationSection = () => {
   return (
-    <div className="section formation">
+    <div className="section margin-left">
       <div className="section_text">
         <h1 className="section_title">Formation</h1>
         <h2 className="section_subtitle">Formation Intégratrice-Web</h2>

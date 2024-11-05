@@ -3,6 +3,7 @@ import PresentationPage from "../components/PresentationPage";
 import Navigation from "../components/Navigation";
 import FormationSection from "../components/FormationSection";
 import WorksSection from "../components/WorksSection";
+import Skills from "../components/Skills";
 
 const SinglePage = () => {
   return (
@@ -11,6 +12,7 @@ const SinglePage = () => {
       <PresentationPage />
       <FormationSection />
       <WorksSection />
+      <Skills />
     </div>
   );
 };
