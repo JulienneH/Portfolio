@@ -88,3 +88,48 @@ body {
 .formation_subtitle {
   font-size: 15px;
 }
+
+/*works*/
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  padding: 15px;
+  width: 35%;
+  text-align: center;
+  height: 300px;
+  overflow: hidden;
+}
+
+.card_image {
+  width: 90%;
+  border-radius: 5px;
+  object-fit: contain;
+  height: auto;
+}
+
+.card_title {
+  font-size: 1.2em;
+  margin-bottom: 8px;
+}
+
+.card_description {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.cards_works {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+}
