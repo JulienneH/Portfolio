@@ -168,3 +168,51 @@ body {
   height: 50px;
   object-fit: contain;
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 900px;
+}
+
+.form_group label {
+  width: 100px;
+  margin-right: 50px;
+}
+
+.form_group input,
+.form_group textarea {
+  flex-grow: 1;
+  height: 30px;
+}
+
+textarea {
+  resize: vertical;
+}
+#message {
+  height: 100px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 50%;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

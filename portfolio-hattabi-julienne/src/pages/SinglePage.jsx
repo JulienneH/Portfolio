@@ -4,6 +4,7 @@ import Navigation from "../components/Navigation";
 import FormationSection from "../components/FormationSection";
 import WorksSection from "../components/WorksSection";
 import Skills from "../components/Skills";
+import FormContact from "../components/FormContact";
 
 const SinglePage = () => {
   return (
@@ -13,6 +14,7 @@ const SinglePage = () => {
       <FormationSection />
       <WorksSection />
       <Skills />
+      <FormContact />
     </div>
   );
 };
