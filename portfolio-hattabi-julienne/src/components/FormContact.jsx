@@ -11,7 +11,7 @@ const FormContact = () => {
   };
 
   return (
-    <div className="form">
+    <div className="form" id="contact">
       <h1 className="section_title section_text margin_left">
         Concrétisez votre projet, travaillons ensemble !
       </h1>

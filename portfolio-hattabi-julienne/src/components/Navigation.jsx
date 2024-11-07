@@ -14,10 +14,18 @@ const Navigation = () => {
   return (
     <>
       <ul className={`navigation ${showMenu ? "show" : ""}`}>
-        <li className="navigation_content">Mon parcours de formation</li>
-        <li className="navigation_content">Mes réalisations</li>
-        <li className="navigation_content">Mes compétences</li>
-        <li className="navigation_content">Contact</li>
+        <li className="navigation_content">
+          <a href="#parcours">Mon parcours de formation</a>
+        </li>
+        <li className="navigation_content">
+          <a href="#realisations">Mes réalisations</a>
+        </li>
+        <li className="navigation_content">
+          <a href="#competences">Mes compétences</a>
+        </li>
+        <li className="navigation_content">
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </>
   );
