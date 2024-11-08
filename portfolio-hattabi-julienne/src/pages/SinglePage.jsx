@@ -5,6 +5,7 @@ import FormationSection from "../components/FormationSection";
 import WorksSection from "../components/WorksSection";
 import Skills from "../components/Skills";
 import FormContact from "../components/FormContact";
+import Footer from "../components/Footer";
 
 const SinglePage = () => {
   return (
@@ -15,6 +16,7 @@ const SinglePage = () => {
       <WorksSection />
       <Skills />
       <FormContact />
+      <Footer />
     </div>
   );
 };

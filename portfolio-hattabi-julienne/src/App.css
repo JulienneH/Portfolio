@@ -8,6 +8,7 @@
 body {
   font-family: "Luciole", sans-serif;
   background-color: #efe9e4;
+  margin: 0;
 }
 a {
   text-decoration: none;
@@ -51,8 +52,7 @@ a {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  width: 75%;
-  margin-left: 150px;
+  width: 100%;
   padding: 0;
   transform: translateX(
     -100%
@@ -63,7 +63,7 @@ a {
   position: fixed;
   top: 0;
   margin-top: 0;
-  height: 50px;
+  height: 65px;
 }
 
 .navigation.show {
@@ -324,11 +324,20 @@ button:hover {
 
 .footer {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 40px;
+  align-items: center;
+}
+
+.footer_img {
+  display: flex;
+  gap: 50px;
 }
 .footer_logo {
   width: 100px;
-  margin-right: 100px;
-  margin-left: 150px;
+}
+.footer_text {
+  font-size: 20px;
+  color: #5e5343;
 }
