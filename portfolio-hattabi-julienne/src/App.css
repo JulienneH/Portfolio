@@ -26,6 +26,7 @@ a {
   width: 25%;
   border-radius: 15px;
   margin-top: 130px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 5);
 }
 .presentation_photo {
   margin-left: 200px;
