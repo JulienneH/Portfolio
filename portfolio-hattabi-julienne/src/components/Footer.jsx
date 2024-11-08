@@ -1,6 +1,6 @@
 import React from "react";
-import GITHUB from "../images/github.png";
-import LINKEDIN from "../images/linkedin.png";
+import GITHUB from "../images/github.webp";
+import LINKEDIN from "../images/linkedin.webp";
 
 const Footer = () => {
   return (

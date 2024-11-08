@@ -1,16 +1,16 @@
 import React from "react";
 import PropTypes from "prop-types";
-import HTML from "../images/html.png";
-import CSS from "../images/css.png";
-import SASS from "../images/sass.png";
-import JS from "../images/js.png";
-import SWAGGER from "../images/swagger.png";
-import NOTION from "../images/notion.png";
-import REACT from "../images/react.png";
-import NODEJS from "../images/nodejs.png";
-import WAVE from "../images/wave.jpg";
+import HTML from "../images/html.webp";
+import CSS from "../images/css.webp";
+import SASS from "../images/sass.webp";
+import JS from "../images/js.webp";
+import SWAGGER from "../images/swagger.webp";
+import NOTION from "../images/notion.webp";
+import REACT from "../images/react.webp";
+import NODEJS from "../images/nodejs.webp";
+import WAVE from "../images/wave.webp";
 import LIGHTHOUSE from "../images/lightouse.webp";
-import YARN from "../images/yarn.jpg";
+import YARN from "../images/yarn.webp";
 import REDUX from "../images/redux.webp";
 
 // objet de mappage pour associer les logos à leurs noms

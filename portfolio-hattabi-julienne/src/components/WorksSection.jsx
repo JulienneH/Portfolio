@@ -5,16 +5,16 @@ import TechLogo from "../components/TechLogo";
 
 // Mapping pour associer les noms d'images aux imports
 const imageMap = {
-  Bookie: require("../images/Bookie.png"),
-  RidingCities: require("../images/riding-cities.png"),
-  Ohmyfood: require("../images/ohmyfood.png"),
-  Print: require("../images/printit.png"),
-  Portfolio: require("../images/portfolio-sophie-bluel.png"),
-  Kanban: require("../images/kanban.jpg"),
-  Kasa: require("../images/kasa.png"),
-  Optimisation: require("../images/optimisation.jpg"),
-  Events: require("../images/events.png"),
-  Bank: require("../images/argentbank.png"),
+  Bookie: require("../images/Bookie.webp"),
+  RidingCities: require("../images/riding-cities.webp"),
+  Ohmyfood: require("../images/ohmyfood.webp"),
+  Print: require("../images/printit.webp"),
+  Portfolio: require("../images/portfolio-sophie-bluel.webp"),
+  Kanban: require("../images/kanban.webp"),
+  Kasa: require("../images/kasa.webp"),
+  Optimisation: require("../images/optimisation.webp"),
+  Events: require("../images/events.webp"),
+  Bank: require("../images/argentbank.webp"),
 };
 
 const WorksSection = () => {
@@ -59,7 +59,7 @@ const WorksSection = () => {
             <div className="modal-body">
               <div className="modal-left">
                 <h3>Description du projet</h3>
-                <p>{selectedWork.description}</p>
+                <p className="modal_text">{selectedWork.description}</p>
               </div>
               <div className="modal-right">
                 <h3>Technologies utilisées</h3>
