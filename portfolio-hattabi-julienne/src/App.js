@@ -1,10 +1,9 @@
-// src/App.js
 import React from "react";
-import AppRouter from "./AppRouter";
+import SinglePage from "./pages/SinglePage";
 import "./App.css";
 
 function App() {
-  return <AppRouter />;
+  return <SinglePage />;
 }
 
 export default App;
