@@ -1,58 +1,20 @@
 import React, { useState } from "react";
 import CardWorks from "./CardWorks";
-import worksData from "../works.json"; // Importer le fichier JSON
-
-// Importer les images
-import Bookie from "../images/Bookie.png";
-import RidingCities from "../images/riding-cities.png";
-import Ohmyfood from "../images/ohmyfood.png";
-import Print from "../images/printit.png";
-import Portfolio from "../images/portfolio-sophie-bluel.png";
-import Kanban from "../images/kanban.jpg";
-import Kasa from "../images/kasa.png";
-import Optimisation from "../images/optimisation.jpg";
-import Events from "../images/events.png";
-import Bank from "../images/argentbank.png";
-import HTML from "../images/html.png";
-import CSS from "../images/css.png";
-import SASS from "../images/sass.png";
-import JS from "../images/js.png";
-import SWAGGER from "../images/swagger.png";
-import NOTION from "../images/notion.png";
-import REACT from "../images/react.png";
-import NODEJS from "../images/nodejs.png";
-import WAVE from "../images/wave.jpg";
-import LIGHTHOUSE from "../images/lightouse.webp";
-import YARN from "../images/yarn.jpg";
-import REDUX from "../images/redux.webp";
-
-const techLogos = {
-  HTML: HTML,
-  CSS: CSS,
-  SASS: SASS,
-  JS: JS,
-  SWAGGER: SWAGGER,
-  NOTION: NOTION,
-  REACT: REACT,
-  NODEJS: NODEJS,
-  WAVE: WAVE,
-  LIGHTHOUSE: LIGHTHOUSE,
-  YARN: YARN,
-  REDUX: REDUX,
-};
+import worksData from "../works.json";
+import TechLogo from "../components/TechLogo";
 
 // Mapping pour associer les noms d'images aux imports
 const imageMap = {
-  Bookie: Bookie,
-  RidingCities: RidingCities,
-  Ohmyfood: Ohmyfood,
-  Print: Print,
-  Portfolio: Portfolio,
-  Kanban: Kanban,
-  Kasa: Kasa,
-  Optimisation: Optimisation,
-  Events: Events,
-  Bank: Bank,
+  Bookie: require("../images/Bookie.png"),
+  RidingCities: require("../images/riding-cities.png"),
+  Ohmyfood: require("../images/ohmyfood.png"),
+  Print: require("../images/printit.png"),
+  Portfolio: require("../images/portfolio-sophie-bluel.png"),
+  Kanban: require("../images/kanban.jpg"),
+  Kasa: require("../images/kasa.png"),
+  Optimisation: require("../images/optimisation.jpg"),
+  Events: require("../images/events.png"),
+  Bank: require("../images/argentbank.png"),
 };
 
 const WorksSection = () => {
@@ -104,13 +66,7 @@ const WorksSection = () => {
                 <ul className="modal_tech">
                   {selectedWork.techUsed.map((tech, index) => (
                     <li key={index}>
-                      {techLogos[tech] && (
-                        <img
-                          src={techLogos[tech]}
-                          alt={tech}
-                          className="modal_techlogos"
-                        />
-                      )}
+                      <TechLogo tech={tech} size="40px" />
                     </li>
                   ))}
                 </ul>

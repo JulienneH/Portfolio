@@ -7,7 +7,7 @@ const HardSkills = ({ skills }) => {
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div key={index} className="skill-item">
-            <img src={skill.image} alt={skill.name} className="skill-image" />
+            <img src={skill.image} alt={skill.tech} className="skill-image" />
           </div>
         ))}
       </div>

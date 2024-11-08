@@ -17,22 +17,22 @@ import NPM from "../images/npm-yarn.png";
 
 const Skills = () => {
   const hardSkills = [
-    { image: HTML },
-    { image: CSS },
-    { image: SASS },
-    { image: REACT },
-    { image: REDUX },
-    { image: JS },
-    { image: NEXT },
-    { image: NPM },
+    { tech: "HTML", image: HTML },
+    { tech: "CSS", image: CSS },
+    { tech: "SASS", image: SASS },
+    { tech: "REACT", image: REACT },
+    { tech: "REDUX", image: REDUX },
+    { tech: "JS", image: JS },
+    { tech: "NEXT", image: NEXT },
+    { tech: "NPM", image: NPM },
   ];
 
   const softSkills = [
-    { image: NOTION },
-    { image: CHATGPT },
-    { image: VSCODE },
-    { image: GIT },
-    { image: GITHUB },
+    { tech: "NOTION", image: NOTION },
+    { tech: "CHATGPT", image: CHATGPT },
+    { tech: "VSCODE", image: VSCODE },
+    { tech: "GIT", image: GIT },
+    { tech: "GITHUB", image: GITHUB },
   ];
 
   return (
