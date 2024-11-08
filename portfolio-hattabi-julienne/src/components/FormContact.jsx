@@ -1,13 +1,45 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 
 const FormContact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [isSent, setIsSent] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // code pour gérer l'envoi du formulaire
+
+    const serviceID = "service_bvdo4ag";
+    const templateID = "template_xmn2x7k";
+    const userID = "oLbKvYYWexS0iXjCE";
+
+    const templateParams = {
+      from_name: name,
+      from_email: email,
+      message: message,
+      to_name: "juliennehattabi@outlook.com",
+      subject: `Message reçu depuis ton portfolio`,
+    };
+
+    // Envoi de l'email via EmailJS
+    emailjs.send(serviceID, templateID, templateParams, userID).then(
+      (response) => {
+        console.log(
+          "Message envoyé avec succès!",
+          response.status,
+          response.text
+        );
+        setIsSent(true);
+        // Réinitialiser le formulaire après l'envoi
+        setName("");
+        setEmail("");
+        setMessage("");
+      },
+      (error) => {
+        console.error("Erreur lors de l'envoi", error);
+      }
+    );
   };
 
   return (
@@ -40,8 +72,8 @@ const FormContact = () => {
             required
           />
         </div>
-        <div className="form_group ">
-          <label htmlFor="message" className="section_subtitle section_text ">
+        <div className="form_group">
+          <label htmlFor="message" className="section_subtitle section_text">
             Message
           </label>
           <textarea
@@ -53,6 +85,12 @@ const FormContact = () => {
         </div>
         <button type="submit">Envoyer</button>
       </form>
+
+      {isSent && (
+        <div className="success-message">
+          <p>Votre message a été envoyé avec succès !</p>
+        </div>
+      )}
     </div>
   );
 };
