@@ -15,7 +15,7 @@ const Navigation = () => {
     <>
       <ul className={`navigation ${showMenu ? "show" : ""}`}>
         <li className="navigation_content">
-          <a href="#parcours">Mon parcours de formation</a>
+          <a href="#parcours">Parcours de formation</a>
         </li>
         <li className="navigation_content">
           <a href="#realisations">Mes réalisations</a>

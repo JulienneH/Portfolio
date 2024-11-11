@@ -44,7 +44,7 @@ const FormContact = () => {
 
   return (
     <div className="form" id="contact">
-      <h1 className="section_title section_text margin_left">
+      <h1 className="section_title section_text margin_left section_title_mobile">
         Concrétisez votre projet, travaillons ensemble !
       </h1>
       <form onSubmit={handleSubmit}>

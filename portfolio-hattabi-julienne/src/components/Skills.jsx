@@ -36,11 +36,11 @@ const Skills = () => {
   ];
 
   return (
-    <div className="skills margin-left" id="competences">
-      <h1 className="section_title section_text m">
+    <div className="skills margin-left section_text" id="competences">
+      <h1 className="section_title section_title_mobile">
         Mes compétences à votre service
       </h1>
-      <p className="section_description section_text">
+      <p className="section_description">
         Dans l'optique de fournir des solutions à la pointe de l'innovation,
         j'ai mis en place une veille technologique afin de rester informée des
         dernières tendances et évolutions du secteur. L'apprentissage continu de

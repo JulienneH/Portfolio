@@ -5,10 +5,18 @@
   font-style: normal;
 }
 
+@media (max-width: 768px) {
+  html {
+    max-width: 767px;
+  }
+}
+
 body {
   font-family: "Luciole", sans-serif;
   background-color: #efe9e4;
   margin: 0;
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 a {
   text-decoration: none;
@@ -21,24 +29,64 @@ a {
   align-items: center;
   gap: 70px;
 }
-
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    width: auto;
+    gap: 0;
+    margin-left: auto;
+  }
+}
 .section_photo {
   width: 25%;
   border-radius: 15px;
   margin-top: 130px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 5);
 }
+@media (max-width: 768px) {
+  .section_photo {
+    width: 90%;
+  }
+}
 .presentation_photo {
   margin-left: 200px;
+}
+@media (max-width: 768px) {
+  .presentation_photo {
+    margin-left: auto;
+    margin-right: 25px;
+  }
 }
 .section_text {
   color: #5e5343;
   text-align: justify;
 }
 
+@media (max-width: 768px) {
+  .section_text {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+}
+
 .section_title {
   font-size: 50px;
   margin-top: 100px;
+}
+@media (max-width: 768px) {
+  .section_title {
+    font-size: 40px;
+    margin: 0;
+  }
+}
+@media (max-width: 768px) {
+  .section_title_mobile {
+    font-size: 30px;
+    width: 70%;
+  }
 }
 .section_subtitle {
   font-size: 30px;
@@ -47,7 +95,11 @@ a {
   font-size: 20px;
   width: 70%;
 }
-
+/*presentation page */
+@media (max-width: 768px) {
+  .presentation_page {
+  }
+}
 /*navigation*/
 .navigation {
   list-style-type: none;
@@ -71,6 +123,11 @@ a {
   transform: translateX(0); /* Ramène le menu à sa position d'origine */
   opacity: 1;
 }
+@media (max-width: 768px) {
+  .navigation.show {
+    height: 80px;
+  }
+}
 
 .navigation_content {
   flex: 1;
@@ -79,19 +136,35 @@ a {
   color: #5e5343;
   font-size: 20px;
 }
+@media (max-width: 768px) {
+  .navigation_content {
+    font-size: 15px;
+  }
+}
 
 .navigation_content:hover {
   background-color: #efe9e4;
   cursor: pointer;
 }
 /*formation*/
-
-.margin-left {
-  margin-left: 200px;
+@media (min-width: 768px) {
+  .margin-left {
+    margin-left: 200px;
+  }
 }
+
 .formation_photo {
   margin-right: 320px;
   width: 30%;
+}
+@media (max-width: 768px) {
+  .formation_photo {
+    width: 85%;
+    margin-left: 30px;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 .formation_subtitle {
@@ -106,6 +179,13 @@ a {
   justify-content: space-between;
   width: 80%;
 }
+@media (max-width: 768px) {
+  .cards {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 .card:hover {
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 5);
@@ -121,6 +201,12 @@ a {
   text-align: center;
   height: 230px;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .card {
+    width: 85%;
+    margin-left: 15px;
+  }
 }
 
 .card_image {
@@ -145,16 +231,31 @@ a {
   flex-direction: column;
   margin-left: 200px;
 }
+@media (max-width: 768px) {
+  .cards_works {
+    margin-left: auto;
+  }
+}
 
 .skills {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .skills {
+    margin-bottom: 25px;
+  }
+}
 
 .skills-section {
   display: flex;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .skills-section {
+    flex-direction: column;
+  }
 }
 
 .skills-section h2 {
@@ -168,7 +269,12 @@ a {
   flex-wrap: wrap;
   gap: 10px;
 }
-
+@media (max-width: 768px) {
+  .skills-grid {
+    gap: 25px;
+    flex-direction: column;
+  }
+}
 .skill-item {
   display: flex;
   justify-content: center;
@@ -195,6 +301,13 @@ a {
   width: 900px;
 }
 
+@media (max-width: 768px) {
+  .form_group {
+    width: auto;
+    flex-direction: column;
+  }
+}
+
 .form_group label {
   width: 100px;
   margin-right: 50px;
@@ -206,6 +319,12 @@ a {
   height: 30px;
 }
 
+@media (max-width: 768px) {
+  .form_group input,
+  .form_group textarea {
+    width: 300px;
+  }
+}
 textarea {
   resize: vertical;
 }
@@ -224,7 +343,11 @@ button {
   margin-left: 50%;
   font-size: 20px;
 }
-
+@media (max-width: 768px) {
+  button {
+    margin-left: 28%;
+  }
+}
 button:hover {
   background-color: #0056b3;
 }
@@ -255,6 +378,9 @@ button:hover {
 
 .modal_content h2 {
   margin-bottom: 20px;
+}
+.modal_text {
+  text-align: justify;
 }
 
 /* Body de la modale avec grille */

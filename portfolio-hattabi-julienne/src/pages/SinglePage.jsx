@@ -11,7 +11,9 @@ const SinglePage = () => {
   return (
     <div>
       <Navigation />
-      <PresentationPage />
+      <div className="presentation_page">
+        <PresentationPage />
+      </div>
       <FormationSection />
       <WorksSection />
       <Skills />
