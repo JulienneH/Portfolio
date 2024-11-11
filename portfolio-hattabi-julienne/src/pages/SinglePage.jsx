@@ -6,18 +6,33 @@ import WorksSection from "../components/WorksSection";
 import Skills from "../components/Skills";
 import FormContact from "../components/FormContact";
 import Footer from "../components/Footer";
+import FadeInSection from "../components/FadeInSection";
 
 const SinglePage = () => {
   return (
     <div>
       <Navigation />
+
       <div className="presentation_page">
         <PresentationPage />
       </div>
-      <FormationSection />
-      <WorksSection />
-      <Skills />
-      <FormContact />
+
+      <FadeInSection>
+        <FormationSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <WorksSection />
+      </FadeInSection>
+
+      <FadeInSection>
+        <Skills />
+      </FadeInSection>
+
+      <FadeInSection>
+        <FormContact />
+      </FadeInSection>
+
       <Footer />
     </div>
   );
