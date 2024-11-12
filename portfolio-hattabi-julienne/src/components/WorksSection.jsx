@@ -56,12 +56,12 @@ const WorksSection = () => {
               X
             </button>
             <h2>{selectedWork.title}</h2>
-            <div className="modal-body">
-              <div className="modal-left">
+            <div className="modal_body">
+              <div className="modal_left">
                 <h3>Description du projet</h3>
                 <p className="modal_text">{selectedWork.description}</p>
               </div>
-              <div className="modal-right">
+              <div className="modal_right">
                 <h3>Technologies utilisées</h3>
                 <ul className="modal_tech">
                   {selectedWork.techUsed.map((tech, index) => (
@@ -72,7 +72,7 @@ const WorksSection = () => {
                 </ul>
               </div>
             </div>
-            <div className="modal-footer">
+            <div className="modal_footer">
               <a
                 href={selectedWork.github}
                 target="_blank"

@@ -1,6 +1,6 @@
 import React from "react";
 import SinglePage from "./pages/SinglePage";
-import "./App.css";
+import "../src/styles/main.scss";
 
 function App() {
   return <SinglePage />;
