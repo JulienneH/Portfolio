@@ -5,8 +5,8 @@
     "screen": "RidingCities",
     "description": "Dans le cadre de ce projet, j'ai été chargé de l'actualisation du site Internet de l'association Riding Cities. La mission consistait à ajouter une nouvelle section et à modifier une section existante.Le développement s'est fait exclusivement en HTML, en réutilisant et en adaptant le code existant pour répondre aux exigences de la maquette.",
     "techUsed": ["HTML", "CSS"],
-    "github": "",
-    "githubPages": ""
+    "github": "https://github.com/JulienneH/RidingCities.git",
+    "githubPages": "https://julienneh.github.io/RidingCities/"
   },
   {
     "id": 2,
@@ -14,7 +14,7 @@
     "screen": "Bookie",
     "description": "Le projet consistait à concevoir et intégrer la page d'accueil d'une agence de voyage en utilisant HTML et CSS, avec un accent particulier sur le design responsive. À partir des maquettes Figma fournies pour mobile, tablette et desktop, j'ai créé des composants d'interface qui respectent les exigences de design et assurent une expérience utilisateur optimale sur tous les appareils.Ce travail m'a permis d'affiner mes compétences en design responsive et de mieux comprendre comment structurer et styliser le code pour répondre aux attentes du client.",
     "techUsed": ["HTML", "CSS"],
-    "github": "",
+    "github": "https://github.com/JulienneH/Bookie.git",
     "githubPages": ""
   },
   {
@@ -32,8 +32,8 @@
     "screen": "Print",
     "description": "Ce projet m'a permis de me familiariser avec JavaScript en dynamisant un site web statique d'une imprimerie. L'objectif principal était d'intégrer un carrousel interactif afin de rendre le site plus engageant et dynamique.En travaillant sur ce projet, j'ai exploré les bases de JavaScript, un langage essentiel pour le développement web interactif, et appris à intégrer des éléments interactifs. J'ai mis à jour le code HTML existant et ajouté un carrousel en JavaScript, ce qui m’a permis de comprendre l'interaction entre JavaScript, HTML et CSS pour créer des fonctionnalités dynamique",
     "techUsed": ["HTML", "CSS", "JS"],
-    "github": "",
-    "githubPages": ""
+    "github": "https://github.com/JulienneH/Print-it-p5.git",
+    "githubPages": "https://julienneh.github.io/Print-it-p5/"
   },
   {
     "id": 5,
@@ -41,7 +41,7 @@
     "screen": "Portfolio",
     "description": "L'objectif de ce projet était de créer une page web dynamique pour le site d'une architecte d'intérieur, en utilisant JavaScript et en interagissant avec une API. J'ai travaillé sur le développement Front-End du site en créant une page de présentation des travaux de l'architecte à partir du HTML fourni. Cela a impliqué la gestion des événements utilisateurs et la manipulation des éléments du DOM avec JavaScript.",
     "techUsed": ["HTML", "CSS", "JS", "SWAGGER"],
-    "github": "",
+    "github": "https://github.com/JulienneH/Portfolio-architecte-p6.git",
     "githubPages": ""
   },
   {
@@ -59,7 +59,7 @@
     "screen": "Kasa",
     "description": "Ce travail avait pour objectif de développer le front-end d'une application web en utilisant React et React Router, afin de créer une expérience utilisateur moderne et réactive.J'ai conçu et implémenté la logique de présentation des données et les composants React pour assurer une interface dynamique et fluide. React Router a été utilisé pour gérer la navigation entre les différentes pages de l'application, ce qui m'a permis d'acquérir une bonne maîtrise du routage dans une application web moderne.",
     "techUsed": ["HTML", "CSS", "REACT", "NODEJS"],
-    "github": "",
+    "github": "https://github.com/JulienneH/Projet-8-React.git",
     "githubPages": ""
   },
   {
@@ -68,7 +68,7 @@
     "screen": "Optimisation",
     "description": "Le but de ce travail était d'optimiser le référencement, la performance et l'accessibilité d'un site web afin d'améliorer son classement sur les moteurs de recherche et offrir une meilleure expérience utilisateur. J'ai commencé par identifier les problèmes de chargement et de référencement du site en utilisant des outils d'audit tels que Lighthouse et Wave. Sur la base des résultats obtenus, j'ai proposé des recommandations pour améliorer la vitesse de chargement, la structure du code, et l'optimisation pour les moteurs de recherche.",
     "techUsed": ["WAVE", "LIGHTHOUSE"],
-    "github": "",
+    "github": "https://github.com/JulienneH/Optimisation-seo-p9.git",
     "githubPages": ""
   },
   {
@@ -77,7 +77,7 @@
     "screen": "Events",
     "description": "Ce projet m'a permis de finaliser le développement d'un site One-Page en me concentrant sur le débogage et la résolution des bugs.En parallèle, j'ai complété le cahier de recette, un document détaillant les scénarios de test nécessaires pour assurer le bon fonctionnement du site, incluant des tests unitaires et fonctionnels.Pour gérer le projet, j'ai utilisé Yarn comme gestionnaire de packages et Node.js pour exécuter du code JavaScript côté serveur",
     "techUsed": ["REACT", "NODEJS", "YARN"],
-    "github": "",
+    "github": "https://github.com/JulienneH/Projet10.git",
     "githubPages": ""
   },
   {
@@ -86,7 +86,7 @@
     "screen": "Bank",
     "description": "Dans ce projet, ma mission principale a été de développer le front-end d’une application bancaire en utilisant React et Redux, afin de créer une expérience utilisateur réactive et dynamique.J'ai commencé par intégrer le front-end avec le back-end en écrivant des appels API REST.L’interface utilisateur a été développée avec React, en mettant l’accent sur la création d'un tableau de bord complet et responsive pour les utilisateurs.Redux a été utilisé pour gérer les données de l’application et maintenir un état global cohérent à travers toute l'interface.Enfin, j'ai utilisé Node.js pour exécuter le code JavaScript côté serveur, ce qui m’a permis d’acquérir une expérience précieuse dans le développement full-stack.",
     "techUsed": ["HTML", "CSS", "REACT", "REDUX", "SWAGGER"],
-    "github": "",
+    "github": "https://github.com/JulienneH/Argent-Bank-ReactApp.git",
     "githubPages": ""
   }
 ]
