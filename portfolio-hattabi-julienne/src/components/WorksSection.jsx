@@ -25,17 +25,20 @@ const WorksSection = () => {
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedWork, setSelectedWork] = useState(null);
-
+  const [isClosing, setIsClosing] = useState(false);
   const openModal = (work) => {
     setSelectedWork(work);
     setIsModalOpen(true);
   };
 
-  const closeModal = () => {
-    setIsModalOpen(false);
-    setSelectedWork(null);
+  const handleCloseModal = () => {
+    setIsClosing(true);
+    setTimeout(() => {
+      setIsModalOpen(false);
+      setSelectedWork(null);
+      setIsClosing(false);
+    }, 500);
   };
-
   return (
     <div className="cards_works" id="realisations">
       <h1 className="section_text section_title">Mes travaux</h1>
@@ -50,9 +53,9 @@ const WorksSection = () => {
         ))}
       </div>
       {isModalOpen && selectedWork && (
-        <div className="modal">
+        <div className={`modal ${isClosing ? "hidden" : ""}`}>
           <div className="modal_content">
-            <button className="close_button" onClick={closeModal}>
+            <button className="close_button" onClick={handleCloseModal}>
               X
             </button>
             <h2>{selectedWork.title}</h2>

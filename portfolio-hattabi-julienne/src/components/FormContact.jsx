@@ -83,7 +83,9 @@ const FormContact = () => {
             required
           ></textarea>
         </div>
-        <button type="submit">Envoyer</button>
+        <button type="submit" className="form_button">
+          Envoyer
+        </button>
       </form>
 
       {isSent && (

@@ -25,6 +25,23 @@
       width: 300px;
     }
   }
+  &_button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 50%;
+    font-size: 20px;
+    @media (max-width: 768px) {
+      margin-left: 28%;
+    }
+  }
+  &_button:hover {
+    color: #0056b3;
+  }
 }
 
 textarea {
@@ -32,22 +49,4 @@ textarea {
 }
 #message {
   height: 100px;
-}
-
-button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-left: 50%;
-  font-size: 20px;
-  @media (max-width: 768px) {
-    margin-left: 28%;
-  }
-  &:hover {
-    color: #0056b3;
-  }
 }

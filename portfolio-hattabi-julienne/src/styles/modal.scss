@@ -9,6 +9,8 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
   &_content {
     background-color: white;
     padding: 20px;
@@ -66,7 +68,9 @@
     text-decoration: underline;
   }
 }
-
+.modal.hidden {
+  opacity: 0;
+}
 .close_button {
   position: absolute;
   top: 10px;
@@ -76,4 +80,9 @@
   font-size: 20px;
   color: #333;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.close_button:hover {
+  background-color: blue;
+  color: white;
 }
