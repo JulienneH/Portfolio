@@ -1,0 +1,58 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form_group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 900px;
+}
+@media (max-width: 768px) {
+  .form_group {
+    width: auto;
+    flex-direction: column;
+  }
+}
+.form_group label {
+  width: 100px;
+  margin-right: 50px;
+}
+.form_group input, .form_group textarea {
+  flex-grow: 1;
+  height: 30px;
+}
+@media (max-width: 768px) {
+  .form_group input, .form_group textarea {
+    width: 300px;
+  }
+}
+.form_button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 50%;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .form_button {
+    margin-left: 28%;
+  }
+}
+.form_button:hover {
+  color: #0056b3;
+}
+
+textarea {
+  resize: vertical;
+}
+
+#message {
+  height: 100px;
+}/*# sourceMappingURL=form.css.map */

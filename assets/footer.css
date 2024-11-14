@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 40px;
+  align-items: center;
+}
+.footer_img {
+  display: flex;
+  gap: 50px;
+}
+.footer_logo {
+  width: 100px;
+}
+.footer_text {
+  font-size: 20px;
+  color: #5e5343;
+}/*# sourceMappingURL=footer.css.map */
