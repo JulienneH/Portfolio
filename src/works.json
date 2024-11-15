@@ -15,7 +15,7 @@
     "description": "Le projet consistait à concevoir et intégrer la page d'accueil d'une agence de voyage en utilisant HTML et CSS, avec un accent particulier sur le design responsive. À partir des maquettes Figma fournies pour mobile, tablette et desktop, j'ai créé des composants d'interface qui respectent les exigences de design et assurent une expérience utilisateur optimale sur tous les appareils.Ce travail m'a permis d'affiner mes compétences en design responsive et de mieux comprendre comment structurer et styliser le code pour répondre aux attentes du client.",
     "techUsed": ["HTML", "CSS"],
     "github": "https://github.com/JulienneH/Bookie.git",
-    "githubPages": ""
+    "githubPages": "https://julienneh.github.io/Bookie/"
   },
   {
     "id": 3,
@@ -60,7 +60,7 @@
     "description": "Ce travail avait pour objectif de développer le front-end d'une application web en utilisant React et React Router, afin de créer une expérience utilisateur moderne et réactive.J'ai conçu et implémenté la logique de présentation des données et les composants React pour assurer une interface dynamique et fluide. React Router a été utilisé pour gérer la navigation entre les différentes pages de l'application, ce qui m'a permis d'acquérir une bonne maîtrise du routage dans une application web moderne.",
     "techUsed": ["HTML", "CSS", "REACT", "NODEJS"],
     "github": "https://github.com/JulienneH/Projet-8-React.git",
-    "githubPages": ""
+    "githubPages": "https://julienneh.github.io/Projet-8-React/#/home"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "description": "Le but de ce travail était d'optimiser le référencement, la performance et l'accessibilité d'un site web afin d'améliorer son classement sur les moteurs de recherche et offrir une meilleure expérience utilisateur. J'ai commencé par identifier les problèmes de chargement et de référencement du site en utilisant des outils d'audit tels que Lighthouse et Wave. Sur la base des résultats obtenus, j'ai proposé des recommandations pour améliorer la vitesse de chargement, la structure du code, et l'optimisation pour les moteurs de recherche.",
     "techUsed": ["WAVE", "LIGHTHOUSE"],
     "github": "https://github.com/JulienneH/Optimisation-seo-p9.git",
-    "githubPages": ""
+    "githubPages": "https://julienneh.github.io/Optimisation-seo-p9/"
   },
   {
     "id": 9,
