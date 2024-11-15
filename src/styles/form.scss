@@ -16,6 +16,11 @@
   &_group label {
     width: 100px;
     margin-right: 50px;
+    @media (max-width: 768px) {
+      width: auto;
+      text-align: center;
+      margin-right: 0;
+    }
   }
   &_group input,
   &_group textarea {

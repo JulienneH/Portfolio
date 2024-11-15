@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import CardWorks from "./CardWorks";
 import worksData from "../works.json";
 import TechLogo from "../components/TechLogo";
@@ -26,6 +26,9 @@ const WorksSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedWork, setSelectedWork] = useState(null);
   const [isClosing, setIsClosing] = useState(false);
+
+  const modalRef = useRef(null);
+
   const openModal = (work) => {
     setSelectedWork(work);
     setIsModalOpen(true);
@@ -39,6 +42,15 @@ const WorksSection = () => {
       setIsClosing(false);
     }, 500);
   };
+
+  useEffect(() => {
+    if (isModalOpen && modalRef.current) {
+      if (window.innerWidth <= 768) {
+        modalRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [isModalOpen]);
+
   return (
     <div className="cards_works" id="realisations">
       <h1 className="section_text section_title">Mes travaux</h1>
@@ -54,7 +66,7 @@ const WorksSection = () => {
       </div>
       {isModalOpen && selectedWork && (
         <div className={`modal ${isClosing ? "hidden" : ""}`}>
-          <div className="modal_content">
+          <div className="modal_content" ref={modalRef}>
             <button className="close_button" onClick={handleCloseModal}>
               X
             </button>
@@ -88,7 +100,7 @@ const WorksSection = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Voir le projet sur GitHub Pages
+                Accéder au site
               </a>
             </div>
           </div>
