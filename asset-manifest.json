@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.98fd4e6d.css",
-    "main.js": "/Portfolio/static/js/main.375aadae.js",
+    "main.css": "/Portfolio/static/css/main.561f941a.css",
+    "main.js": "/Portfolio/static/js/main.ee69af6f.js",
     "static/media/riding-cities.webp": "/Portfolio/static/media/riding-cities.f14041bf76d455eee908.webp",
     "static/media/optimisation.webp": "/Portfolio/static/media/optimisation.308ce1d44af360c8caa6.webp",
     "static/media/PhotoHattabiJulienne.webp": "/Portfolio/static/media/PhotoHattabiJulienne.a391f40cf61b7b1e7d8f.webp",
@@ -11,7 +11,6 @@
     "static/media/kanban.webp": "/Portfolio/static/media/kanban.e8c7d02a12e4ad8fd1af.webp",
     "static/media/react.webp": "/Portfolio/static/media/react.561da84d19085fa1e0ba.webp",
     "static/media/linkedin.webp": "/Portfolio/static/media/linkedin.ac768d848b92e80b4b72.webp",
-    "static/media/next.webp": "/Portfolio/static/media/next.2f632e80c5f0885ff79d.webp",
     "static/media/chat-gpt.webp": "/Portfolio/static/media/chat-gpt.4a5a42b5d8d6ebdd6cda.webp",
     "static/media/nodejs.webp": "/Portfolio/static/media/nodejs.3b77bfd6f2c3edca9f74.webp",
     "static/media/wave.webp": "/Portfolio/static/media/wave.9734b941257d12fc32e0.webp",
@@ -35,11 +34,11 @@
     "static/media/portfolio-sophie-bluel.webp": "/Portfolio/static/media/portfolio-sophie-bluel.9b2c31623dd38989e948.webp",
     "static/media/events.webp": "/Portfolio/static/media/events.682ffba3146c170691ee.webp",
     "index.html": "/Portfolio/index.html",
-    "main.98fd4e6d.css.map": "/Portfolio/static/css/main.98fd4e6d.css.map",
-    "main.375aadae.js.map": "/Portfolio/static/js/main.375aadae.js.map"
+    "main.561f941a.css.map": "/Portfolio/static/css/main.561f941a.css.map",
+    "main.ee69af6f.js.map": "/Portfolio/static/js/main.ee69af6f.js.map"
   },
   "entrypoints": [
-    "static/css/main.98fd4e6d.css",
-    "static/js/main.375aadae.js"
+    "static/css/main.561f941a.css",
+    "static/js/main.ee69af6f.js"
   ]
 }
