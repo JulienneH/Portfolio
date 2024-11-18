@@ -49,9 +49,7 @@
     "title": "Gestion de projet",
     "screen": "Kanban",
     "description": "L'objectif de ce projet était de participer à la planification stratégique du développement d'un site web, en me concentrant sur l'organisation et la gestion du projet, sans intervenir dans la partie codage. Dans ce cadre, j'ai travaillé à partir de la maquette, des spécifications fonctionnelles et des User Stories pour comprendre les besoins du projet et organiser les différentes étapes de développement.J'ai rédigé les spécifications techniques du projet en décomposant les fonctionnalités en tâches précises et en définissant les besoins fonctionnels. Pour assurer une gestion efficace du projet, j'ai utilisé Notion où j'ai créé un tableau Kanban pour suivre les progrès et les priorités.",
-    "techUsed": ["NOTION"],
-    "github": "",
-    "githubPages": ""
+    "techUsed": ["NOTION"]
   },
   {
     "id": 7,
@@ -77,8 +75,7 @@
     "screen": "Events",
     "description": "Ce projet m'a permis de finaliser le développement d'un site One-Page en me concentrant sur le débogage et la résolution des bugs.En parallèle, j'ai complété le cahier de recette, un document détaillant les scénarios de test nécessaires pour assurer le bon fonctionnement du site, incluant des tests unitaires et fonctionnels.Pour gérer le projet, j'ai utilisé Yarn comme gestionnaire de packages et Node.js pour exécuter du code JavaScript côté serveur",
     "techUsed": ["REACT", "NODEJS", "YARN"],
-    "github": "https://github.com/JulienneH/Projet10.git",
-    "githubPages": ""
+    "github": "https://github.com/JulienneH/Projet10.git"
   },
   {
     "id": 10,

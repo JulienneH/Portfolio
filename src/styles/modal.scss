@@ -99,6 +99,15 @@
   &_footer a:hover {
     text-decoration: underline;
   }
+  &_backend_notice {
+    color: #007bff;
+    font-weight: bold;
+    width: 500px;
+    margin-top: 0;
+  }
+  &_project7 {
+    width: auto;
+  }
 }
 
 .modal.visible {

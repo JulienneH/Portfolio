@@ -97,20 +97,41 @@ const WorksSection = () => {
               </div>
             </div>
             <div className="modal_footer">
-              <a
-                href={selectedWork.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Voir le code sur GitHub
-              </a>
-              <a
-                href={selectedWork.githubPages}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Accéder au site
-              </a>
+              {selectedWork.github || selectedWork.githubPages ? (
+                <>
+                  {selectedWork.github && (
+                    <a
+                      href={selectedWork.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Voir le code sur GitHub
+                    </a>
+                  )}
+                  {selectedWork.githubPages ? (
+                    <a
+                      href={selectedWork.githubPages}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Accéder au site
+                    </a>
+                  ) : (
+                    <p className="modal_backend_notice">
+                      Ce site contient une partie Backend. Il n'est donc pas
+                      disponible sur Pages. Pour voir le site, clonez le
+                      répository et suivez le readme.
+                    </p>
+                  )}
+                </>
+              ) : (
+                <p className="modal_backend_notice modal_project7">
+                  Ce projet était exclusivement une gestion de projet, sans
+                  développement de code. L'organisation, la planification et
+                  l'utilisation d'outils comme Notion ont été les principaux
+                  aspects de ce travail.
+                </p>
+              )}
             </div>
           </div>
         </div>
