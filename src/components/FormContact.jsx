@@ -6,6 +6,7 @@ const FormContact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [isSent, setIsSent] = useState(false);
+  const [isSending, setIsSending] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -21,6 +22,7 @@ const FormContact = () => {
       to_name: "juliennehattabi@outlook.com",
       subject: `Message reçu depuis ton portfolio`,
     };
+    setIsSending(true);
 
     // Envoi de l'email via EmailJS
     emailjs.send(serviceID, templateID, templateParams, userID).then(
@@ -30,6 +32,7 @@ const FormContact = () => {
           response.status,
           response.text
         );
+        setIsSending(false);
         setIsSent(true);
         // Réinitialiser le formulaire après l'envoi
         setName("");
@@ -38,6 +41,7 @@ const FormContact = () => {
       },
       (error) => {
         console.error("Erreur lors de l'envoi", error);
+        setIsSending(false);
       }
     );
   };
@@ -84,7 +88,7 @@ const FormContact = () => {
           ></textarea>
         </div>
         <button type="submit" className="form_button">
-          Envoyer
+          {isSending ? "Envoi en cours..." : "Envoyer"}
         </button>
       </form>
 
