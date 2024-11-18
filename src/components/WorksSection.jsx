@@ -24,18 +24,23 @@ const WorksSection = () => {
   }));
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [selectedWork, setSelectedWork] = useState(null);
+  const [isOpening, setIsOpening] = useState(false);
   const [isClosing, setIsClosing] = useState(false);
+  const [selectedWork, setSelectedWork] = useState(null);
 
   const modalRef = useRef(null);
 
   const openModal = (work) => {
     setSelectedWork(work);
     setIsModalOpen(true);
+    setTimeout(() => {
+      setIsOpening(true); // Active l'animation après le rendu
+    }, 10);
   };
 
   const handleCloseModal = () => {
     setIsClosing(true);
+    setIsOpening(false); // Désactive l'animation d'ouverture
     setTimeout(() => {
       setIsModalOpen(false);
       setSelectedWork(null);
@@ -65,7 +70,11 @@ const WorksSection = () => {
         ))}
       </div>
       {isModalOpen && selectedWork && (
-        <div className={`modal ${isClosing ? "hidden" : ""}`}>
+        <div
+          className={`modal ${isOpening ? "visible" : ""} ${
+            isClosing ? "hidden" : ""
+          }`}
+        >
           <div className="modal_content" ref={modalRef}>
             <button className="close_button" onClick={handleCloseModal}>
               X
