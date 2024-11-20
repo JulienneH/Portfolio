@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import CardWorks from "./CardWorks";
 import worksData from "../works.json";
-import TechLogo from "../components/TechLogo";
+import Modal from "./Modal";
 
 // Mapping pour associer les noms d'images aux imports
 const imageMap = {
@@ -33,14 +33,12 @@ const WorksSection = () => {
   const openModal = (work) => {
     setSelectedWork(work);
     setIsModalOpen(true);
-    setTimeout(() => {
-      setIsOpening(true); // Active l'animation après le rendu
-    }, 10);
+    setTimeout(() => setIsOpening(true), 10);
   };
 
   const handleCloseModal = () => {
     setIsClosing(true);
-    setIsOpening(false); // Désactive l'animation d'ouverture
+    setIsOpening(false);
     setTimeout(() => {
       setIsModalOpen(false);
       setSelectedWork(null);
@@ -69,73 +67,14 @@ const WorksSection = () => {
           />
         ))}
       </div>
-      {isModalOpen && selectedWork && (
-        <div
-          className={`modal ${isOpening ? "visible" : ""} ${
-            isClosing ? "hidden" : ""
-          }`}
-        >
-          <div className="modal_content" ref={modalRef}>
-            <button className="close_button" onClick={handleCloseModal}>
-              X
-            </button>
-            <h2>{selectedWork.title}</h2>
-            <div className="modal_body">
-              <div className="modal_left">
-                <h3>Description du projet</h3>
-                <p className="modal_text">{selectedWork.description}</p>
-              </div>
-              <div className="modal_right">
-                <h3>Technologies utilisées</h3>
-                <ul className="modal_tech">
-                  {selectedWork.techUsed.map((tech, index) => (
-                    <li key={index}>
-                      <TechLogo tech={tech} size="40px" />
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className="modal_footer">
-              {selectedWork.github || selectedWork.githubPages ? (
-                <>
-                  {selectedWork.github && (
-                    <a
-                      href={selectedWork.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Voir le code sur GitHub
-                    </a>
-                  )}
-                  {selectedWork.githubPages ? (
-                    <a
-                      href={selectedWork.githubPages}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Accéder au site
-                    </a>
-                  ) : (
-                    <p className="modal_backend_notice">
-                      Ce site contient une partie Backend. Il n'est donc pas
-                      disponible sur Pages. Pour voir le site, clonez le
-                      répository et suivez le readme.
-                    </p>
-                  )}
-                </>
-              ) : (
-                <p className="modal_backend_notice modal_project7">
-                  Ce projet était exclusivement une gestion de projet, sans
-                  développement de code. L'organisation, la planification et
-                  l'utilisation d'outils comme Notion ont été les principaux
-                  aspects de ce travail.
-                </p>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
+      <Modal
+        isOpen={isModalOpen}
+        isOpening={isOpening}
+        isClosing={isClosing}
+        onClose={handleCloseModal}
+        selectedWork={selectedWork}
+        modalRef={modalRef}
+      />
     </div>
   );
 };
