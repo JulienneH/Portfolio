@@ -87,7 +87,7 @@ const FormContact = () => {
             required
           ></textarea>
         </div>
-        <button type="submit" className="form_button">
+        <button type="submit" className="form_button" disabled={isSending}>
           {isSending ? "Envoi en cours..." : "Envoyer"}
         </button>
       </form>
