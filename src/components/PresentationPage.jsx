@@ -13,9 +13,11 @@ const PresentationPage = () => {
         <h1 className="section_title">Julienne HATTABI</h1>
         <h2 className="section_subtitle">Développeuse front-end</h2>
         <p className="section_description">
-          Je suis développeuse front-end passionnée par l’intégration
-          d’interfaces utilisateur intuitives, motivée par l’apprentissage de
-          nouvelles technologies et déterminée à surmonter de nouveaux défis.
+          Développeuse front-end enthousiaste, je me passionne pour
+          l'intégration d'interfaces utilisateur intuitives et dynamiques.
+          Curieuse et motivée, j’aime explorer de nouvelles technologies pour
+          perfectionner mes compétences et relever de nouveaux défis avec
+          passion.
         </p>
       </div>
     </div>

@@ -14,7 +14,9 @@ const FormationSection = () => {
           à la création d’un site web de qualité. J’ai également développé un
           sens aigu de l'organisation, amélioré ma capacité à résoudre des bugs
           de manière efficace, et élargi mes axes de travail en apprenant
-          d'autres technologies et langages.
+          d'autres technologies et langages. Ces projets m’ont initiée à la
+          gestion de projet, notamment à la planification des étapes de
+          développement et à l’utilisation de la méthode AGILE.
         </p>
       </div>
       <img

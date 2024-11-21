@@ -104,9 +104,15 @@
     font-weight: bold;
     width: 500px;
     margin-top: 0;
+    @media (max-width: 768px) {
+      width: 300px;
+    }
   }
   &_project7 {
     width: auto;
+    @media (max-width: 768px) {
+      width: 300px;
+    }
   }
 }
 

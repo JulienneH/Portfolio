@@ -12,6 +12,8 @@ import WAVE from "../images/wave.webp";
 import LIGHTHOUSE from "../images/lightouse.webp";
 import YARN from "../images/yarn.webp";
 import REDUX from "../images/redux.webp";
+import GITHUB from "../images/github.webp";
+import GIT from "../images/git.webp";
 
 // objet de mappage pour associer les logos à leurs noms
 const techLogos = {
@@ -27,6 +29,8 @@ const techLogos = {
   LIGHTHOUSE,
   YARN,
   REDUX,
+  GIT,
+  GITHUB,
 };
 
 const TechLogo = ({ tech, size = "50px" }) => {

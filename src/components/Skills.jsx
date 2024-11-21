@@ -7,7 +7,6 @@ import SASS from "../images/sass.webp";
 import JS from "../images/js.webp";
 import REACT from "../images/react.webp";
 import REDUX from "../images/redux.webp";
-import NEXT from "../images/next.webp";
 import NOTION from "../images/notion.webp";
 import CHATGPT from "../images/chat-gpt.webp";
 import VSCODE from "../images/vscode.webp";
@@ -23,7 +22,6 @@ const Skills = () => {
     { tech: "REACT", image: REACT },
     { tech: "REDUX", image: REDUX },
     { tech: "JS", image: JS },
-    { tech: "NEXT", image: NEXT },
     { tech: "NPM", image: NPM },
   ];
 
