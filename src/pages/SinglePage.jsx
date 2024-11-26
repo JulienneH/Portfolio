@@ -21,9 +21,7 @@ const SinglePage = () => {
         <FormationSection />
       </FadeInSection>
 
-      <FadeInSection>
-        <WorksSection />
-      </FadeInSection>
+      <WorksSection />
 
       <FadeInSection>
         <Skills />
