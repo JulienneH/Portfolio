@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.384f53d5.css",
+    "main.css": "/Portfolio/static/css/main.2c7da16f.css",
     "main.js": "/Portfolio/static/js/main.063e26a0.js",
     "static/media/riding-cities.webp": "/Portfolio/static/media/riding-cities.f14041bf76d455eee908.webp",
     "static/media/optimisation.webp": "/Portfolio/static/media/optimisation.308ce1d44af360c8caa6.webp",
@@ -34,11 +34,11 @@
     "static/media/portfolio-sophie-bluel.webp": "/Portfolio/static/media/portfolio-sophie-bluel.9b2c31623dd38989e948.webp",
     "static/media/events.webp": "/Portfolio/static/media/events.682ffba3146c170691ee.webp",
     "index.html": "/Portfolio/index.html",
-    "main.384f53d5.css.map": "/Portfolio/static/css/main.384f53d5.css.map",
+    "main.2c7da16f.css.map": "/Portfolio/static/css/main.2c7da16f.css.map",
     "main.063e26a0.js.map": "/Portfolio/static/js/main.063e26a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.384f53d5.css",
+    "static/css/main.2c7da16f.css",
     "static/js/main.063e26a0.js"
   ]
 }
