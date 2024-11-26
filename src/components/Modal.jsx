@@ -1,5 +1,6 @@
 import React from "react";
 import TechLogo from "../components/TechLogo";
+import { useEffect } from "react";
 
 const Modal = ({
   isOpen,
@@ -9,6 +10,21 @@ const Modal = ({
   selectedWork,
   modalRef,
 }) => {
+  useEffect(() => {
+    if (isOpen) {
+      const handleOutsideClick = (e) => {
+        // Vérifie si le clic est à l'extérieur de la modale
+        if (modalRef.current && !modalRef.current.contains(e.target)) {
+          onClose();
+        }
+      };
+      document.addEventListener("mousedown", handleOutsideClick);
+
+      return () => {
+        document.removeEventListener("mousedown", handleOutsideClick);
+      };
+    }
+  }, [isOpen, onClose, modalRef]);
   if (!isOpen || !selectedWork) return null;
 
   return (
@@ -61,8 +77,8 @@ const Modal = ({
               ) : (
                 <p className="modal_backend_notice">
                   Ce site contient une partie Backend. Il n'est donc pas
-                  disponible sur Pages. Pour voir le site, clonez le répository
-                  et suivez le readme.
+                  disponible sur Pages. Pour voir le site, clonez le dépot
+                  Github en local et suivez le Readme.
                 </p>
               )}
             </>

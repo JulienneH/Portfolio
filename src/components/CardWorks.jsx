@@ -1,6 +1,6 @@
 import React from "react";
 
-const CardWorks = ({ title, screen, onClick }) => {
+const CardWorks = ({ title, imgProject, onClick }) => {
   return (
     <div className="card" onClick={onClick}>
       <div
@@ -9,7 +9,7 @@ const CardWorks = ({ title, screen, onClick }) => {
       >
         <h4 className="card_title">{title}</h4>
       </div>
-      <img src={screen} alt={title} className="card_image" />
+      <img src={imgProject} alt={title} className="card_image" />
     </div>
   );
 };

@@ -20,7 +20,7 @@ const imageMap = {
 const WorksSection = () => {
   const works = worksData.map((work) => ({
     ...work,
-    screen: imageMap[work.screen],
+    imgProject: imageMap[work.imgProject],
   }));
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -62,7 +62,7 @@ const WorksSection = () => {
           <CardWorks
             key={work.id}
             title={work.title}
-            screen={work.screen}
+            imgProject={work.imgProject}
             onClick={() => openModal(work)}
           />
         ))}
