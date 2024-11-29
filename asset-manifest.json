@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.9ba349f2.css",
-    "main.js": "/Portfolio/static/js/main.4b8a2511.js",
+    "main.js": "/Portfolio/static/js/main.071037f4.js",
     "static/media/riding-cities.webp": "/Portfolio/static/media/riding-cities.f14041bf76d455eee908.webp",
     "static/media/optimisation.webp": "/Portfolio/static/media/optimisation.308ce1d44af360c8caa6.webp",
     "static/media/PhotoHattabiJulienne.webp": "/Portfolio/static/media/PhotoHattabiJulienne.a391f40cf61b7b1e7d8f.webp",
@@ -35,10 +35,10 @@
     "static/media/events.webp": "/Portfolio/static/media/events.682ffba3146c170691ee.webp",
     "index.html": "/Portfolio/index.html",
     "main.9ba349f2.css.map": "/Portfolio/static/css/main.9ba349f2.css.map",
-    "main.4b8a2511.js.map": "/Portfolio/static/js/main.4b8a2511.js.map"
+    "main.071037f4.js.map": "/Portfolio/static/js/main.071037f4.js.map"
   },
   "entrypoints": [
     "static/css/main.9ba349f2.css",
-    "static/js/main.4b8a2511.js"
+    "static/js/main.071037f4.js"
   ]
 }
